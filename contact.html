@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – BlueWave Aquatics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+  <header class="navbar">
+    <div class="logo">BlueWave Aquatics</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>
+      Have a question or need expert guidance for your aquarium setup?
+      We're here to help. Fill out the form below and our team will reach
+      out to you shortly.
+    </p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your inquiry" />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BlueWave Aquatics | Your Ocean in a Tank</p>
+  </footer>
+</body>
+</html>
